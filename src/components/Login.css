@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, ;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+  background-image: url('https://img.freepik.com/premium-photo/cartoon-chef-cooking-pot-yellow-background_14117-634871.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.login-container {
+  text-align: center;
+  
+
+  
+
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(237, 15, 89);
+  gap: 10px;
+  font-size: 40px;
+ 
+ 
+  
+}
+
+h1 img {
+  width: 40px;
+  height: 40px;
+ 
+  
+}
+
+
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #4caf50;
+}
+
+
+button {
+  width: 70%;
+  padding: 12px;
+  margin-top: 15px;
+  margin-left: 40px;
+  background: #f13c0f;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
