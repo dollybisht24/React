@@ -13,7 +13,7 @@ const Header = ({ onAuthClick }) => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-      className="w-full glass-card px-6 py-4 mb-8 sticky top-4 z-40"
+      className="glass-nav w-full px-6 py-4"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <motion.div
@@ -25,16 +25,16 @@ const Header = ({ onAuthClick }) => {
           <motion.div
             whileHover={{ rotate: 360, scale: 1.1 }}
             transition={{ duration: 0.6 }}
-            className="p-2 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg"
+            className="p-2.5 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl shadow-lg"
           >
-            <ChefHat className="w-7 h-7 text-white" />
+            <ChefHat className="w-7 h-7 text-white" strokeWidth={2.5} />
           </motion.div>
           <div>
-            <h1 className="text-2xl md:text-3xl font-display font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 bg-clip-text text-transparent">
               AI Recipe Studio
             </h1>
-            <p className="text-sm text-slate-600 dark:text-slate-400 font-medium hidden sm:block">
-              Gourmet cooking powered by AI
+            <p className="text-xs text-slate-600 dark:text-slate-400 font-medium hidden sm:block tracking-wide">
+              Professional Culinary AI Assistant
             </p>
           </div>
         </motion.div>
@@ -54,9 +54,9 @@ const Header = ({ onAuthClick }) => {
             aria-label="Toggle theme"
           >
             {isDark ? (
-              <Sun className="w-5 h-5 text-blue-500" />
+              <Sun className="w-5 h-5 text-amber-500" />
             ) : (
-              <Moon className="w-5 h-5 text-blue-600" />
+              <Moon className="w-5 h-5 text-amber-600" />
             )}
           </motion.button>
 
@@ -66,7 +66,7 @@ const Header = ({ onAuthClick }) => {
                 <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">
                   Welcome back,
                 </p>
-                <p className="font-bold text-blue-600 dark:text-blue-400">
+                <p className="font-bold text-amber-600 dark:text-amber-400">
                   {user.name}
                 </p>
               </div>

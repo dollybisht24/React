@@ -356,12 +356,12 @@ Pairs beautifully with a crisp white wine or sparkling water with lemon.
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
         onClick={generateRecipe}
-        whileHover={{ scale: 1.02 }}
+        whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(245, 158, 11, 0.4)" }}
         whileTap={{ scale: 0.98 }}
         className="w-full liquid-button flex items-center justify-center gap-3 text-xl py-5"
       >
         <Sparkles className="w-6 h-6" />
-        Generate Recipe with AI
+        <span className="font-bold tracking-wide">Generate Recipe with AI Image</span>
         <Sparkles className="w-6 h-6" />
       </motion.button>
     </motion.div>
